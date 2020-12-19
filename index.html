@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Devchallenges</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Checkout</h1>
+      <div class="grid__container">
+        <div class="products"></div>
+        <div class="contact__wrapper">
+          <form class="contact__form" novalidate>
+            <div class="contact__group">
+              <h2>Contact infomation</h2>
+              <div class="input-group">
+                <label for="email">E-mail</label>
+                <i class="fas fa-envelope"></i>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Enter your email.."
+                  class="form__input"
+                />
+                <p class="error" id="error__email">error text</p>
+              </div>
+
+              <div class="input-group">
+                <label for="phone">Phone</label>
+                <i class="fas fa-phone-alt"></i>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="text"
+                  placeholder="Enter your phone.."
+                  class="form__input"
+                />
+                <p class="error" id="error__phone">error phone</p>
+              </div>
+            </div>
+
+            <div class="shipping__group">
+              <h2>Shipping address</h2>
+              <div class="input-group">
+                <label for="name">Full name</label>
+                <i class="fas fa-user-circle"></i>
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Enter your name..."
+                  class="form__input"
+                />
+                <p class="error" id="error__name">error text</p>
+              </div>
+
+              <div class="input-group">
+                <label for="address">Address</label>
+                <i class="fas fa-home"></i>
+                <input
+                  id="address"
+                  name="address"
+                  type="text"
+                  placeholder="Your address.."
+                  class="form__input"
+                />
+                <p class="error" id="error__address">error text</p>
+              </div>
+
+              <div class="input-group">
+                <label for="city">City</label>
+                <i class="fas fa-city"></i>
+                <input
+                  id="city"
+                  name="city"
+                  type="text"
+                  placeholder="Your city.."
+                  class="form__input"
+                />
+                <p class="error" id="error__city">error text</p>
+              </div>
+
+              <div class="input-group__bottom">
+                <div class="left__col">
+                  <label for="country">Country</label>
+                  <i class="fas fa-city"></i>
+                  <i class="fas fa-chevron-down"></i>
+
+                  <select name="country" id="country" class="country">
+                    <option value="">Your country</option>
+                    <option value="hungary">Hungary</option>
+                    <option value="germany">Germany</option>
+                    <option value="italy">Italy</option>
+                  </select>
+                  <p class="error" id="error__country">error text</p>
+                </div>
+                <div class="right__col">
+                  <label for="postal__code">Postal code</label>
+                  <i class="fas fa-mail-bulk"></i>
+                  <input
+                    id="postal__code"
+                    name="pcode"
+                    type="text"
+                    placeholder="Your postal code.."
+                    class="form__input"
+                  />
+                  <p class="error" id="error__postalcode">error text</p>
+                </div>
+              </div>
+            </div>
+            <div class="checbox__group">
+              <input type="checkbox" id="save" name="save" />
+              <label for="save">Save this information for next time</label>
+            </div>
+
+            <button type="submit" class="submit__btn">Continue</button>
+          </form>
+        </div>
+      </div>
+      <p class="bottom__text">Tibor Kerekes @ DevChallenges.io</p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
